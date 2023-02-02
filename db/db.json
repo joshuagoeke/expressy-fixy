@@ -12,15 +12,5 @@
         "title": "Delete a stinkin to-do item",
         "text": "You know, connect all the code routes so you can do this.",
         "id": "f6d0"
-    },
-    {
-        "title": "Delete me.",
-        "text": "Nelson is pointing at you and saying \"ha ha!\"",
-        "id": "54c7"
-    },
-    {
-        "title": "Notes still addable",
-        "text": "But you failed to make them deletable.",
-        "id": "7adb"
     }
 ]

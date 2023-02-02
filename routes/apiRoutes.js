@@ -21,19 +21,19 @@ router.post('/notes', (req, res) => {
 
 router.delete(`/notes/:id`, (req, res) => {
     console.log(` ${req.method} note received for ${req.params.id}`);
-//     utils.readFromFile('./db/db.json')
-//     .then(data => { 
-//         const notesData = res.json(JSON.parse(data));
-//         console.log(typeof notesData); 
-//         notesData.forEach(note => { 
-//             if (req.params.id === note.id){
-//                 let killIndex =  notesData.indexOf(note);
-//                 notesData.splice(killIndex, 1);
-//                 utils.writeToFile('./db/db.json', notesData);
-//             }
+    utils.readFromFile('./db/db.json')
+    .then(data => { 
+        const notesData = JSON.parse(data);
+        console.log(typeof notesData); 
+        notesData.forEach(note => { 
+            if (req.params.id === note.id){
+                let killIndex =  notesData.indexOf(note);
+                notesData.splice(killIndex, 1);
+                utils.writeToFile('./db/db.json', notesData);
+            }
             
-//         })
-// })   
+        })
+})   
 }
 )
 
