@@ -24,6 +24,13 @@ app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
+// DELETE Route for notes page TO DO
+
+app.delete('/notes', (req, res) =>
+  res.sendFile(path.join(__dirname, 'public/notes.html'))
+);
+
+//PORT
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
