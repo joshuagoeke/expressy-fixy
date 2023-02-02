@@ -28,7 +28,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 ## Screenshot
 
-![screenshot of application](assets/images/screenshot.png)
+![screenshot of application](./public/assets/expressy-fixy.jpg?raw=true)
    
 
 ## Credits
